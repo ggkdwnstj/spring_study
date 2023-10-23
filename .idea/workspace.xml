@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7e614e9-b1fa-4e39-a854-a506b51d5c5f" name="Changes" comment="Test &amp; study for JDBC using mariaDB.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jdbc_example/dao/ConnectionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jdbc_example/dao/TodoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jdbc_example/domain/TodoVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dao/TodoDAOTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18d4d380-9186-43bc-a1d4-33af86e092ac.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18d4d380-9186-43bc-a1d4-33af86e092ac.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18d4d380-9186-43bc-a1d4-33af86e092ac/storage_v2/_src_/schema/webdb.0lK8Bg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18d4d380-9186-43bc-a1d4-33af86e092ac/storage_v2/_src_/schema/webdb.0lK8Bg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dao/ConnectTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dao/ConnectTests.java" afterDir="false" />
+    <list default="true" id="d7e614e9-b1fa-4e39-a854-a506b51d5c5f" name="Changes" comment="Learned about Connection between Java program and Database using JDBC.">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jdbc_example/dao/TodoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jdbc_example/dao/TodoDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,7 +293,7 @@
       <workItem from="1697544666682" duration="3587000" />
       <workItem from="1697610675027" duration="4009000" />
       <workItem from="1697868805334" duration="17289000" />
-      <workItem from="1698048684006" duration="176000" />
+      <workItem from="1698048684006" duration="527000" />
     </task>
     <task id="LOCAL-00001" summary="Test &amp; study for JDBC using mariaDB.">
       <option name="closed" value="true" />
@@ -319,7 +311,23 @@
       <option name="project" value="LOCAL" />
       <updated>1697876463757</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Learned about Connection between Java program and Database using JDBC.">
+      <option name="closed" value="true" />
+      <created>1698049059262</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698049059262</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Learned about Connection between Java program and Database using JDBC.">
+      <option name="closed" value="true" />
+      <created>1698049179224</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698049179224</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +338,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -338,7 +358,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test &amp; study for JDBC using mariaDB." />
-    <option name="LAST_COMMIT_MESSAGE" value="Test &amp; study for JDBC using mariaDB." />
+    <MESSAGE value="Learned about Connection between Java program and Database using JDBC." />
+    <option name="LAST_COMMIT_MESSAGE" value="Learned about Connection between Java program and Database using JDBC." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

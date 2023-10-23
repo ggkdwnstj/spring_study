@@ -16,7 +16,7 @@ public class TodoDAO {
 
         try (Connection conn = ConnectionUtil.INSTANCE.getConnection();
              PreparedStatement preparedStatement = conn.prepareStatement("select now()");
-             ResultSet resultSet = preparedStatement.executeQuery();) {
+             ResultSet resultSet = preparedStatement.executeQuery()) {
             resultSet.next();
             now = resultSet.getString(1);
         } catch (Exception e) {
