@@ -39,16 +39,12 @@ public class TodoDAOTests {
 
     @Test // 1개의 튜플 select
     public void testSelectOne() throws Exception {
-        Long tno = 2l;
+        Long tno = 2L;
         TodoVO vo = todoDAO.selectOne(tno);
 
         System.out.println(vo);
 
     }
 
-    @Test
-    public void testDeleteOne() throws Exception{
-
-    }
 }
 
