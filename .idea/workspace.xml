@@ -4,23 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7e614e9-b1fa-4e39-a854-a506b51d5c5f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jdbc_example/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dao/ConnectTests.java" afterDir="false" />
+    <list default="true" id="d7e614e9-b1fa-4e39-a854-a506b51d5c5f" name="Changes" comment="Test &amp; study for JDBC using mariaDB.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jdbc_example/dao/ConnectionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jdbc_example/dao/TodoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jdbc_example/domain/TodoVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dao/TodoDAOTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18d4d380-9186-43bc-a1d4-33af86e092ac.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18d4d380-9186-43bc-a1d4-33af86e092ac.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/18d4d380-9186-43bc-a1d4-33af86e092ac/storage_v2/_src_/schema/webdb.0lK8Bg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/18d4d380-9186-43bc-a1d4-33af86e092ac/storage_v2/_src_/schema/webdb.0lK8Bg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dao/ConnectTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dao/ConnectTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,16 +25,41 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ggkdwnstj&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="6769add2-796d-45e1-81f2-64fbf0db4707" />
+        <option name="url" value="https://github.com/ggkdwnstj/spring_study.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -65,14 +83,16 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.49885058&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -86,8 +106,8 @@
       <recent name="$PROJECT_DIR$/src/main/webapp/calc" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.80">
-    <configuration name="ConnectTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.TodoDAOTests.testSelectOne">
+    <configuration name="TodoDAOTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -100,7 +120,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;dao.ConnectTest&quot;" />
+            <option value="&quot;dao.TodoDAOTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -111,7 +131,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ConnectTest.test1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TodoDAOTests.testInsert" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -124,7 +144,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;dao.ConnectTest.test1&quot;" />
+            <option value="&quot;dao.TodoDAOTests.testInsert&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -135,7 +155,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ConnectTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TodoDAOTests.testSelectAll" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -148,7 +168,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;dao.ConnectTests&quot;" />
+            <option value="&quot;dao.TodoDAOTests.testSelectAll&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -159,7 +179,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ConnectTests.testConnection" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TodoDAOTests.testSelectOne" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -172,7 +192,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;dao.ConnectTests.testConnection&quot;" />
+            <option value="&quot;dao.TodoDAOTests.testSelectOne&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TodoDAOTests.testTime" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;dao.TodoDAOTests.testTime&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -238,10 +282,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ConnectTests.testConnection" />
-        <item itemvalue="Gradle.ConnectTests" />
-        <item itemvalue="Gradle.ConnectTest.test1" />
-        <item itemvalue="Gradle.ConnectTest" />
+        <item itemvalue="Gradle.TodoDAOTests.testSelectOne" />
+        <item itemvalue="Gradle.TodoDAOTests.testSelectAll" />
+        <item itemvalue="Gradle.TodoDAOTests.testInsert" />
+        <item itemvalue="Gradle.TodoDAOTests" />
+        <item itemvalue="Gradle.TodoDAOTests.testTime" />
       </list>
     </recent_temporary>
   </component>
@@ -255,8 +300,26 @@
       <updated>1697544665612</updated>
       <workItem from="1697544666682" duration="3587000" />
       <workItem from="1697610675027" duration="4009000" />
-      <workItem from="1697868805334" duration="5057000" />
+      <workItem from="1697868805334" duration="17289000" />
+      <workItem from="1698048684006" duration="176000" />
     </task>
+    <task id="LOCAL-00001" summary="Test &amp; study for JDBC using mariaDB.">
+      <option name="closed" value="true" />
+      <created>1697876359313</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697876359313</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Test &amp; study for JDBC using mariaDB.">
+      <option name="closed" value="true" />
+      <created>1697876463757</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697876463757</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,5 +335,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Test &amp; study for JDBC using mariaDB." />
+    <option name="LAST_COMMIT_MESSAGE" value="Test &amp; study for JDBC using mariaDB." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

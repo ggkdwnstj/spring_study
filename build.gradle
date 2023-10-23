@@ -22,13 +22,26 @@ tasks.withType(JavaCompile) {
 }
 
 dependencies {
+    compileOnly('javax.servlet:javax.servlet-api:4.0.1')
     compileOnly('jakarta.servlet:jakarta.servlet-api:5.0.0')
     compileOnly('jakarta.websocket:jakarta.websocket-api:2.0.0')
+    compileOnly 'org.projectlombok:lombok:1.18.24' // lombok 관련
+    annotationProcessor 'org.projectlombok:lombok:1.18.24' // lombok 관련
+
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
-//  source: https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client/3.0.4
+    testImplementation("org.projectlombok:lombok:1.18.24") // lombok 관련
+    testRuntimeOnly("org.projectlombok:lombok:1.18.24") // lombok 관련
+
+    // source: https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client/3.0.4
     implementation group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '3.0.4'
+
+    // 커넥션 풀을 저장하기 위한 라이브러리 HikariCP
+    implementation group: 'com.zaxxer', name: 'HikariCP', version: '5.0.0'
+
+    // 빌드 시 log4j 클래스 호출 실패 오류 해결을 위한 implementation
+    implementation 'org.slf4j:slf4j-simple:1.7.32'
 
 }
 
