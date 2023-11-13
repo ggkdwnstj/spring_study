@@ -37,7 +37,7 @@ public class TodoDAO {
         return now;
     }
 
-    // insert into values문 수행
+    // insert into values ... 문 수행
     public void insert(TodoVO vo) throws Exception {
         String sql = "insert into tbl_todo(title, dueDate, finished) values(?,?,?)";
 
@@ -98,8 +98,35 @@ public class TodoDAO {
         return vo;
     }
 
-    // delete from "테이블" where ... 를 수행하는 java 코드
+    // delete from "테이블" where tno = ??? 를 수행하는 java 코드
+    public void deleteOne(Long tno) throws Exception{
+        String sql = "delete from tbl_todo where tno = ?";
 
+        @Cleanup Connection conn = ConnectionUtil.INSTANCE.getConnection();
+        @Cleanup PreparedStatement preparedStatement = conn.prepareStatement(sql);
+
+        preparedStatement.setLong(1,tno);
+        preparedStatement.executeUpdate();
+    }
+
+    // update tbl_todo set title=?, duedate=?, ... 수행
+    public void updateOne(TodoVO todoVO) throws Exception{
+        String sql = "update tbl_todo set title=?, dueDate=?, finished=? where tno = ?";
+
+        @Cleanup Connection conn = ConnectionUtil.INSTANCE.getConnection();
+        @Cleanup PreparedStatement preparedStatement = conn.prepareStatement(sql);
+
+        preparedStatement.setString(1,todoVO.getTitle());
+        preparedStatement.setDate(2,Date.valueOf(todoVO.getDueDate()));
+        preparedStatement.setBoolean(3, todoVO.isFinished());
+        preparedStatement.setLong(4, todoVO.getTno());
+
+        preparedStatement.executeUpdate();
+
+
+
+
+    }
 
 
 }

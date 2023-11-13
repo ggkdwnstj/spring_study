@@ -27,6 +27,7 @@ dependencies {
     compileOnly('jakarta.websocket:jakarta.websocket-api:2.0.0')
     compileOnly 'org.projectlombok:lombok:1.18.24' // lombok 관련
     annotationProcessor 'org.projectlombok:lombok:1.18.24' // lombok 관련
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.24' // lombok 관련
 
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
@@ -40,10 +41,26 @@ dependencies {
     // 커넥션 풀을 저장하기 위한 라이브러리 HikariCP
     implementation group: 'com.zaxxer', name: 'HikariCP', version: '5.0.0'
 
+    // DTO <-> VO 변환을 위한 ModelMapper implementation
+    implementation group: 'org.modelmapper', name: 'modelmapper', version: '3.0.0'
+
     // 빌드 시 log4j 클래스 호출 실패 오류 해결을 위한 implementation
-    implementation 'org.slf4j:slf4j-simple:1.7.32'
+    // 'org.apache.logging.log4j:log4j-slf4j-impl:2.17.2'와 충돌하여 삭제
+    // implementation 'org.slf4j:slf4j-simple:1.7.32'
+
+    // log4j2를 위한 implementations
+    implementation 'org.apache.logging.log4j:log4j-core:2.19.0'
+    implementation 'org.apache.logging.log4j:log4j-api:2.19.0'
+    implementation 'org.apache.logging.log4j:log4j-slf4j-impl:2.17.2'
+
+    // JSTL implementation
+    // JSTL(JSP Standard Tag Library:)은 JSP 표준 태그 라이브러리로, JSP의 기본 태그가 아닌 JSP 확장 태그이다.
+    // JSTL은 반복(forEach), 조건 로직이나 formatting 작업, XML 문서, SQL 태그의 조작을 위한 태그에 사용된다.
+    implementation 'jstl:jstl:1.2'
+
 
 }
+
 
 test {
     useJUnitPlatform()

@@ -24,7 +24,7 @@ public class TodoDAOTests {
     @Test
     public void testInsert() throws Exception {
         TodoVO todoVO = TodoVO.builder()
-                .title("Sample Title...")
+                .title("This is test")
                 .dueDate(LocalDate.now())
                 .build();
 
@@ -44,6 +44,13 @@ public class TodoDAOTests {
 
         System.out.println(vo);
 
+    }
+
+    @Test
+    public void testUpdateOne() throws Exception{
+        TodoVO vo = TodoVO.builder().tno(1L).title("This is updated title.").dueDate(LocalDate.of(2023,10,30)).finished(true).build();
+
+        todoDAO.updateOne(vo);
     }
 
 }

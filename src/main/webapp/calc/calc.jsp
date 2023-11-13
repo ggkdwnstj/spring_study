@@ -13,5 +13,6 @@
 <body>
     <h1>NUM1 ${param.num1}</h1>
     <h1>NUM2 ${param.num2}</h1>
+    <h1>RESULT ${param.num1+param.num2}</h1>
 </body>
 </html>
